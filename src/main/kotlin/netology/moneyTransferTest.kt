@@ -35,7 +35,7 @@ fun transferInterest(
             val visaPercentage = amount.multiply(0.0075.toBigDecimal())
             if (visaPercentage.compareTo(35.toBigDecimal()) > 0) {
                 visaPercentage
-            } else 25.toBigDecimal()
+            } else 35.toBigDecimal()
         }
         else -> 0.toBigDecimal()
     }
