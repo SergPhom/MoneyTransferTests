@@ -33,9 +33,9 @@ fun transferInterest(
         }
         CardType.MIR, CardType.VISA -> {
             val visaPercentage = amount.multiply(0.0075.toBigDecimal())
-            if (visaPercentage.compareTo(25.toBigDecimal()) > 0) {
+            if (visaPercentage.compareTo(35.toBigDecimal()) > 0) {
                 visaPercentage
-            } else 35.toBigDecimal()
+            } else 25.toBigDecimal()
         }
         else -> 0.toBigDecimal()
     }
